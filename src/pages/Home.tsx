@@ -1,4 +1,4 @@
-import { IonHeader, IonPage, IonRouterLink, IonTitle, IonToolbar } from '@ionic/react';
+import { IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { Link } from 'react-router-dom';
 import ListCompetences from '../components/ListCompetences';
 import './Home.css';

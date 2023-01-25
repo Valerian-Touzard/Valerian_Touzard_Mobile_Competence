@@ -22,6 +22,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import AjoutCompetence from './components/AjoutCompetence';
+import DetailCompetence from './pages/DetailCompetence';
 
 setupIonicReact();
 
@@ -35,6 +36,7 @@ const App: React.FC = () => (
         <Route exact path="/addCompetence">
           <AjoutCompetence />
         </Route>
+        <Route path="/competences/:id" component={DetailCompetence} />
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>

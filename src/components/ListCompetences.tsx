@@ -1,4 +1,3 @@
-import { IonButton } from "@ionic/react";
 import { useEffect, useState } from "react";
 import UneCompetence from "../layout/uneCompetence";
 import { competenceService } from "../services/Competences.service";

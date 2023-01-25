@@ -24,5 +24,5 @@ json-server --watch db.json --port 3001
 
 Enfin, une fois que le jsonServer est lancer, éxécuter cette commande(toujours à la racine du projet):
 ```bash
-npm run start
+npm start
 ```
