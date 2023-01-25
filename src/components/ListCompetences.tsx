@@ -22,7 +22,6 @@ const ListCompetences: React.FC = () => {
 
 
     return <>
-        <IonButton color="success">Ajouter une compétences</IonButton>
         {competences && competences.map((competence, index)=>{
             return <div key={index}>
                 <UneCompetence competence={competence}/>
