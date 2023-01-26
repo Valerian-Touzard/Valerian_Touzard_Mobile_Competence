@@ -9,6 +9,30 @@
       "id": "51136037-6b05-4a72-ab2b-d286d962d976",
       "nom": "PHP",
       "desc": "Language à faire disparaitre"
+    },
+    {
+      "id": "4b73a591-8f04-4891-be19-6952321cdf18",
+      "nom": "React",
+      "desc": "Librairie JS"
+    },
+    {
+      "id": "04e89d46-0a0e-44ba-9a26-ceaee7a644c1",
+      "nom": "Angular",
+      "desc": "Framework JS"
+    }
+  ],
+  "personnes": [
+    {
+      "id": "dhfidshfidhsfigsdfygdsy",
+      "nom": "Bylli"
+    },
+    {
+      "id": "e64d77db-c456-44dd-a2c8-2048d3158c26",
+      "nom": "Jean"
+    },
+    {
+      "id": "7f4a4a2e-6af5-42ef-a903-4312f216dba7",
+      "nom": "Floriannon"
     }
   ]
 }

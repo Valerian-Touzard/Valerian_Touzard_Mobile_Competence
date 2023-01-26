@@ -7,10 +7,8 @@ export type uneCompetence = {
     competence: Competence
 }
 
-
 const UneCompetence: React.FC<uneCompetence> = (props: uneCompetence) => {
     
-
     return <Link to={`competences/${props.competence.id as string}`}>
         <IonCard>
             <IonCardHeader>

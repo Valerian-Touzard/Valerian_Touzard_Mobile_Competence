@@ -1,24 +1,22 @@
-import { useEffect, useState } from "react";
+import { useIonViewDidEnter } from "@ionic/react";
+import { useState } from "react";
 import UneCompetence from "../layout/uneCompetence";
 import { competenceService } from "../services/Competences.service";
 import { Competence } from "../type/Competence.type";
-
 
 const ListCompetences: React.FC = () => {
 
     const [competences, setListCompetences] = useState<Competence[]>();
 
-    useEffect(() => {
+    useIonViewDidEnter(() =>{
         getAllCompetences();
-    }, [])
-
+    })
 
     const getAllCompetences = () => {
         competenceService.getAllCompetences()
             .then(data => setListCompetences(data))
             .catch(err => console.error(err));
     }
-
 
     return <>
         {competences && competences.map((competence, index)=>{
@@ -30,3 +28,4 @@ const ListCompetences: React.FC = () => {
 }
 
 export default ListCompetences;
+

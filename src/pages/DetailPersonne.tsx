@@ -1,23 +1,24 @@
 import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonPage, IonToolbar, IonHeader, IonTitle, IonBackButton, IonButtons, IonContent } from "@ionic/react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { competenceService } from "../services/Competences.service";
-import { Competence } from "../type/Competence.type";
+import { personneService } from "../services/Personnes.service";
+import { Personne } from "../type/Personne.type";
 
-const DetailCompetence: React.FC = () => {
+const DetailPersonne: React.FC = () => {
 
-    const [competence, setCompetence] = useState<Competence>();
+    const [personne, setPersonne] = useState<Personne>();
     const { id } = useParams() as { id: string };
+
     useEffect(() => {
-        getOneCompetence();
+        getOnePersonne();
     }, [])
 
     /**
-     * Récupère une compétence en fonction de l'id placer en paramètre de l'URl
+     * Récupère une personne en fonction de l'id placer en paramètre de l'URl
      */
-    const getOneCompetence = () => {
-        competenceService.getOneCompetence(id as string)
-            .then(data => setCompetence(data))
+    const getOnePersonne = () => {
+        personneService.getOnePersonne(id as string)
+            .then(data => setPersonne(data))
             .catch(err => console.error(err));
     }
 
@@ -27,18 +28,18 @@ const DetailCompetence: React.FC = () => {
                 <IonButtons slot="start">
                     <IonBackButton defaultHref="/"></IonBackButton>
                 </IonButtons>
-                <IonTitle>Détaille compétences</IonTitle>
+                <IonTitle>Détaille utilisateur</IonTitle>
             </IonToolbar>
         </IonHeader>
 
         <IonContent>
             <IonCard>
                 <IonCardHeader>
-                    <IonCardTitle>{competence?.nom}</IonCardTitle>
+                    <IonCardTitle>{personne?.nom}</IonCardTitle>
                 </IonCardHeader>
 
                 <IonCardContent>
-                    {competence?.desc}
+                    <p>ceci est une desc temp</p>
                 </IonCardContent>
             </IonCard>
         </IonContent>
@@ -47,4 +48,4 @@ const DetailCompetence: React.FC = () => {
 
 }
 
-export default DetailCompetence;
+export default DetailPersonne;

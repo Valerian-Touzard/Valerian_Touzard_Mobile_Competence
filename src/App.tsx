@@ -23,6 +23,9 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import AjoutCompetence from './components/AjoutCompetence';
 import DetailCompetence from './pages/DetailCompetence';
+import Personnes from './pages/Personnes';
+import AjoutPersonne from './components/AjoutPersonne';
+import DetailPersonne from './pages/DetailPersonne';
 
 setupIonicReact();
 
@@ -36,7 +39,14 @@ const App: React.FC = () => (
         <Route exact path="/addCompetence">
           <AjoutCompetence />
         </Route>
+        <Route exact path="/personnes">
+          <Personnes />
+        </Route>
+        <Route exact path="/addPersonne">
+          <AjoutPersonne />
+        </Route>
         <Route path="/competences/:id" component={DetailCompetence} />
+        <Route path="/personnes/:id" component={DetailPersonne} />
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
