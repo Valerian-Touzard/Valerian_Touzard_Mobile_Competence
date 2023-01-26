@@ -12,6 +12,9 @@ export const ListPersonnes: React.FC = () => {
     })
 
 
+    /**
+     * Récupère la liste complète des utilisateurs
+     */
     const getAllPersonnes = () => {
         personneService.getAllPersonne()
             .then(data => setListPersonnes(data))
