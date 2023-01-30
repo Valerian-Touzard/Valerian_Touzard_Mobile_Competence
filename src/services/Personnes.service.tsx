@@ -36,6 +36,22 @@ class PersonneService{
         })
         .then((response)=> response.json()).catch((error)=> console.error(error));
     }
+
+    /**
+     * Modie une personne en db
+     * @param personne Personne
+     * @param id String
+     * @returns 
+     */
+    saveNiveau = async (personne: Personne, id: string) => { 
+        return await fetch(`${process.env.REACT_APP_URI_PERSONNE}/${id}`,{
+            method:"PATCH",
+            body: JSON.stringify(personne),
+            headers: {"Content-Type":"application/json"}
+        })
+        .then((response)=> response.json())
+        .catch((error) => console.error(error))
+    }
 }
 
 export const personneService = Object.freeze(new PersonneService());

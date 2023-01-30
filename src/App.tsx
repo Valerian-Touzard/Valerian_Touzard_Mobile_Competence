@@ -26,6 +26,7 @@ import DetailCompetence from './pages/DetailCompetence';
 import Personnes from './pages/Personnes';
 import AjoutPersonne from './components/AjoutPersonne';
 import DetailPersonne from './pages/DetailPersonne';
+import ModifierCompetenceAssocier from './components/ModifierCompetenceAssocier';
 
 setupIonicReact();
 
@@ -47,6 +48,7 @@ const App: React.FC = () => (
         </Route>
         <Route path="/competences/:id" component={DetailCompetence} />
         <Route path="/personnes/:id" component={DetailPersonne} />
+        <Route path="/modif/competenceAssocier/:id/:index" component={ModifierCompetenceAssocier}/>
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
