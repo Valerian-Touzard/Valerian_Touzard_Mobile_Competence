@@ -23,38 +23,29 @@
   ],
   "personnes": [
     {
-      "id": "0470ceab-f617-4d7f-a929-d574afef88da",
+      "id": "c330036a-8d2b-45da-8749-d0e299b8b58d",
       "nom": "Valérian",
       "niveauCompetence": [
         {
           "idCompetence": "eadc6acdfd2f4s9dfghkk2",
+          "nomCompetence": "Java",
           "niveau": "INTERMEDIAIRE"
         },
         {
           "idCompetence": "4b73a591-8f04-4891-be19-6952321cdf18",
+          "nomCompetence": "React",
           "niveau": "INTERMEDIAIRE"
-        },
-        {
-          "idCompetence": "04e89d46-0a0e-44ba-9a26-ceaee7a644c1",
-          "niveau": "DEBUTANT"
         }
       ]
     },
     {
-      "id": "1d4cf812-6980-4bc4-b071-3542c3357521",
+      "id": "8edfac6e-721b-42f4-93cf-376596125c4e",
       "nom": "Florian",
       "niveauCompetence": [
         {
-          "idCompetence": "04e89d46-0a0e-44ba-9a26-ceaee7a644c1",
-          "niveau": "DEBUTANT"
-        },
-        {
-          "idCompetence": "eadc6acdfd2f4s9dfghkk2",
-          "niveau": "INTERMEDIAIRE"
-        },
-        {
           "idCompetence": "4b73a591-8f04-4891-be19-6952321cdf18",
-          "niveau": "INTERMEDIAIRE"
+          "nomCompetence": "React",
+          "niveau": "EXPERT"
         }
       ]
     }

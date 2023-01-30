@@ -58,6 +58,7 @@ const AjoutPersonne: React.FC = () => {
     const handleNiveauCompetenceChange = (e: any, competence: Competence) => {
         let newNiveauCompetence: NiveauCompetence = {
             idCompetence: competence.id,
+            nomCompetence: competence.nom,
             niveau: e.target.value
         }        
         

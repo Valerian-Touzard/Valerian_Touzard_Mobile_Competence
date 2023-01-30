@@ -1,5 +1,6 @@
 export interface NiveauCompetence{
     idCompetence: string;
+    nomCompetence: string;
     niveau: string;
 }
 
